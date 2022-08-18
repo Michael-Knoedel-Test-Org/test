@@ -1,0 +1,43 @@
+{
+  "specVersion": "1",
+  "mappings": [
+    {
+      "sourceFilter": {
+        "_type": "jamf_account"
+      },
+      "relationshipProperties": {
+        "_class": "HOSTS"
+      },
+      "relationshipDirection": "REVERSE",
+      "targetFilterKeys": [["_class", "name"]],
+      "propertyMappings": [
+        {
+          "targetValue": "Jamf",
+          "targetProperty": "name"
+        },
+        {
+          "targetValue": "Jamf",
+          "targetProperty": "displayName"
+        },
+        {
+          "targetValue": "Vendor",
+          "targetProperty": "_class"
+        },
+        {
+          "targetValue": "jamf",
+          "targetProperty": "_type"
+        }
+      ]
+    },
+    {
+      "sourceFilter": {
+        "_type": "jamf_account"
+      },
+      "relationshipProperties": {
+        "_class": "OWNS"
+      },
+      "relationshipDirection": "REVERSE",
+      "targetFilterKeys": ["<ROOT_ENTITY>"]
+    }
+  ]
+}
