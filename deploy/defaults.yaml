@@ -1,0 +1,8 @@
+integration_name: jupiter-integration-crowdstrike
+integration_definition_id: 5e650485-6df0-419d-a5c5-f76e564519d6
+integration_vendor_id: crowdstrike
+integration_vendor_title: CrowdStrike
+integration_type: crowdstrike
+log_level: info
+ecs_task_cpu: 512
+ecs_task_memory: 2048
